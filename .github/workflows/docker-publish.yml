@@ -21,6 +21,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: . # Use root of the repo where Dockerfile is
+          file: ./Dockerfile # Explicitly tell where the Dockerfile is
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/rice-disease-app:latest
