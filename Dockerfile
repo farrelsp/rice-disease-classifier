@@ -3,6 +3,10 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+# Install aws cli
+RUN apt-get install -y awscli
+
+# Install packages in requirements.txt
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
