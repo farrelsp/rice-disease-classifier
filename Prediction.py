@@ -92,7 +92,7 @@ transform = transforms.Compose([
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 👥 RusselbinMitchel Team")
 st.sidebar.markdown("""
-- Farrel Satya Putra
+- Farrel Satya Putra Mahendra
 - Made Arbi Parameswara
 - Muhammad Fahmy Nadhif 
 - Adi Wahyu Candra 
