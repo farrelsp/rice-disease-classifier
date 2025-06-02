@@ -4,7 +4,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Install aws cli
-RUN apt-get install -y awscli
+RUN pip install awscli --upgrade --user
 
 # Install packages in requirements.txt
 COPY requirements.txt .
