@@ -127,4 +127,11 @@ with tab2:
     confidence, predicted = predict(image)
     st.success(f"{texts['result'][current_lang]} **{class_names[current_lang][predicted.item()]}**")
     st.info(f"Confidence: **{confidence.item():.2%}**")
-    
+
+# Footer 
+st.markdown("""
+    <hr style="margin-top: 50px;">
+    <div style='text-align: center; color: grey; font-size: 0.9em;'>
+        © 2025 RusselbinMitchel | Built with ❤️ using Streamlit
+    </div>
+""", unsafe_allow_html=True)
