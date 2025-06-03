@@ -131,3 +131,10 @@ for disease_key, info in texts["diseases"].items():
   for step in prevent:
       st.markdown(f"- {step}")
   st.markdown("---")
+
+# Footer 
+st.markdown("""
+    <div style='text-align: center; color: grey; font-size: 0.9em;'>
+        © 2025 RusselbinMitchel | Built with ❤️ using Streamlit
+    </div>
+""", unsafe_allow_html=True)
